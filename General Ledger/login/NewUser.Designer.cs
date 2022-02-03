@@ -90,6 +90,7 @@
             this.lastNameLabel.Size = new System.Drawing.Size(80, 18);
             this.lastNameLabel.TabIndex = 2;
             this.lastNameLabel.Text = "Last Name";
+            this.lastNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // boxLastName
             // 
@@ -379,9 +380,10 @@
             this.buttonCreateUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCreateUser.Location = new System.Drawing.Point(342, 380);
             this.buttonCreateUser.Name = "buttonCreateUser";
-            this.buttonCreateUser.Size = new System.Drawing.Size(172, 43);
+            this.buttonCreateUser.Size = new System.Drawing.Size(172, 30);
             this.buttonCreateUser.TabIndex = 34;
             this.buttonCreateUser.Text = "Create User Account";
+            this.buttonCreateUser.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonCreateUser.UseVisualStyleBackColor = true;
             this.buttonCreateUser.Click += new System.EventHandler(this.buttonCreateUser_Click);
             // 

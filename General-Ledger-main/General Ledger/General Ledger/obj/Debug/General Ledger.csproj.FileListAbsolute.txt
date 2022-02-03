@@ -19,3 +19,13 @@ C:\Users\17703\Desktop\General-Ledger-main\General Ledger\General Ledger\obj\Deb
 C:\Users\17703\Desktop\General-Ledger-main\General Ledger\General Ledger\obj\Debug\General_Ledger.admin.MainAdmin.resources
 C:\Users\17703\Desktop\General-Ledger-main\General Ledger\General Ledger\obj\Debug\General_Ledger.admin.ModifyUsers.resources
 C:\Users\17703\Desktop\General-Ledger-main\General Ledger\General Ledger\obj\Debug\General_Ledger.login.Login.resources
+C:\Users\micha\Desktop\School\Semester 8\SWE 4713 - Application Domain\General-Ledger\General-Ledger-main\General Ledger\General Ledger\obj\Debug\General Ledger.csproj.AssemblyReference.cache
+C:\Users\micha\Desktop\School\Semester 8\SWE 4713 - Application Domain\General-Ledger\General-Ledger-main\General Ledger\General Ledger\obj\Debug\General Ledger.csproj.SuggestedBindingRedirects.cache
+C:\Users\micha\Desktop\School\Semester 8\SWE 4713 - Application Domain\General-Ledger\General-Ledger-main\General Ledger\General Ledger\obj\Debug\General_Ledger.admin.CreateNewPassword.resources
+C:\Users\micha\Desktop\School\Semester 8\SWE 4713 - Application Domain\General-Ledger\General-Ledger-main\General Ledger\General Ledger\obj\Debug\General_Ledger.admin.Email.resources
+C:\Users\micha\Desktop\School\Semester 8\SWE 4713 - Application Domain\General-Ledger\General-Ledger-main\General Ledger\General Ledger\obj\Debug\General_Ledger.admin.ExpiredPasswords.resources
+C:\Users\micha\Desktop\School\Semester 8\SWE 4713 - Application Domain\General-Ledger\General-Ledger-main\General Ledger\General Ledger\obj\Debug\General_Ledger.admin.MainAdmin.resources
+C:\Users\micha\Desktop\School\Semester 8\SWE 4713 - Application Domain\General-Ledger\General-Ledger-main\General Ledger\General Ledger\obj\Debug\General_Ledger.admin.ModifyUsers.resources
+C:\Users\micha\Desktop\School\Semester 8\SWE 4713 - Application Domain\General-Ledger\General-Ledger-main\General Ledger\General Ledger\obj\Debug\General_Ledger.login.Login.resources
+C:\Users\micha\Desktop\School\Semester 8\SWE 4713 - Application Domain\General-Ledger\General-Ledger-main\General Ledger\General Ledger\obj\Debug\General_Ledger.login.NewUser.resources
+C:\Users\micha\Desktop\School\Semester 8\SWE 4713 - Application Domain\General-Ledger\General-Ledger-main\General Ledger\General Ledger\obj\Debug\General Ledger.csproj.GenerateResource.cache

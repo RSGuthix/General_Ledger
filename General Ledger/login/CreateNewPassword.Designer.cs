@@ -32,12 +32,14 @@
             this.NewPassword = new System.Windows.Forms.TextBox();
             this.ConfirmPassword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelNewPassword = new System.Windows.Forms.Label();
+            this.labelConfirmPassword = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(340, 286);
+            this.button1.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(208, 187);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(124, 48);
             this.button1.TabIndex = 0;
@@ -46,51 +48,68 @@
             // 
             // NewPassword
             // 
-            this.NewPassword.Location = new System.Drawing.Point(259, 175);
+            this.NewPassword.Font = new System.Drawing.Font("Franklin Gothic Book", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewPassword.Location = new System.Drawing.Point(152, 85);
             this.NewPassword.Name = "NewPassword";
-            this.NewPassword.Size = new System.Drawing.Size(253, 20);
+            this.NewPassword.PasswordChar = '*';
+            this.NewPassword.Size = new System.Drawing.Size(240, 25);
             this.NewPassword.TabIndex = 1;
-            this.NewPassword.Text = "New Password";
             // 
             // ConfirmPassword
             // 
-            this.ConfirmPassword.Location = new System.Drawing.Point(259, 230);
+            this.ConfirmPassword.Font = new System.Drawing.Font("Franklin Gothic Book", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ConfirmPassword.Location = new System.Drawing.Point(152, 140);
             this.ConfirmPassword.Name = "ConfirmPassword";
-            this.ConfirmPassword.Size = new System.Drawing.Size(253, 20);
+            this.ConfirmPassword.PasswordChar = '*';
+            this.ConfirmPassword.Size = new System.Drawing.Size(240, 25);
             this.ConfirmPassword.TabIndex = 2;
-            this.ConfirmPassword.Text = "Confrim Password";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(346, 111);
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
+            this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(177, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 13);
+            this.label1.Size = new System.Drawing.Size(185, 30);
             this.label1.TabIndex = 3;
             this.label1.Text = "Forgot Password";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // labelNewPassword
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(323, 144);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Please Enter New Password";
+            this.labelNewPassword.AutoSize = true;
+            this.labelNewPassword.Font = new System.Drawing.Font("Franklin Gothic Book", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNewPassword.Location = new System.Drawing.Point(44, 88);
+            this.labelNewPassword.Name = "labelNewPassword";
+            this.labelNewPassword.Size = new System.Drawing.Size(102, 20);
+            this.labelNewPassword.TabIndex = 4;
+            this.labelNewPassword.Text = "New Password";
+            // 
+            // labelConfirmPassword
+            // 
+            this.labelConfirmPassword.AutoSize = true;
+            this.labelConfirmPassword.Font = new System.Drawing.Font("Franklin Gothic Book", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelConfirmPassword.Location = new System.Drawing.Point(22, 143);
+            this.labelConfirmPassword.Name = "labelConfirmPassword";
+            this.labelConfirmPassword.Size = new System.Drawing.Size(124, 20);
+            this.labelConfirmPassword.TabIndex = 5;
+            this.labelConfirmPassword.Text = "Confirm Password";
             // 
             // CreateNewPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(798, 452);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(534, 261);
+            this.Controls.Add(this.labelConfirmPassword);
+            this.Controls.Add(this.labelNewPassword);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ConfirmPassword);
             this.Controls.Add(this.NewPassword);
             this.Controls.Add(this.button1);
             this.Name = "CreateNewPassword";
-            this.Text = "Form1";
+            this.Text = "Forgot Password";
+            this.Load += new System.EventHandler(this.CreateNewPassword_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -102,7 +121,8 @@
         private System.Windows.Forms.TextBox NewPassword;
         private System.Windows.Forms.TextBox ConfirmPassword;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelNewPassword;
+        private System.Windows.Forms.Label labelConfirmPassword;
     }
 }
 

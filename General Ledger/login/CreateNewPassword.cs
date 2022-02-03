@@ -27,5 +27,10 @@ namespace General_Ledger
             MainAdmin mainAdmin = new MainAdmin();
             mainAdmin.Show();
         }
+
+        private void CreateNewPassword_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
