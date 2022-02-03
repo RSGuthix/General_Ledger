@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace General_Ledger.admin
+namespace General_Ledger
 {
     public partial class MainAdmin : Form
     {

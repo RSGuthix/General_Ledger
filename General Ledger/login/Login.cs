@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace General_Ledger.login
+namespace General_Ledger
 {
     public partial class Login : Form
     {
@@ -34,17 +34,26 @@ namespace General_Ledger.login
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            PasswordReset passwordReset = new PasswordReset();
-            passwordReset.Show();
-            Login login = new Login();
-            login.Close();
+            
+            this.Hide();
+            PasswordRecover passwordRecover = new PasswordRecover();
+            passwordRecover.Show();
+
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Hide();
             NewUser newUser = new NewUser();
             newUser.Show();
+            
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MainAdmin mainAdmin = new MainAdmin();
+            mainAdmin.Show();
         }
     }
 }

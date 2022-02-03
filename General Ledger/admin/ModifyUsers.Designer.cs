@@ -1,4 +1,4 @@
-﻿namespace General_Ledger.admin
+﻿namespace General_Ledger
 {
     partial class ModifyUsers
     {

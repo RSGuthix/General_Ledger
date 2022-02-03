@@ -16,7 +16,7 @@ namespace General_Ledger
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new login.Login());
+            Application.Run(new Login());
         }
     }
 }
