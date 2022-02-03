@@ -24,6 +24,7 @@ namespace General_Ledger
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            this.Hide();
             MainAdmin mainAdmin = new MainAdmin();
             mainAdmin.Show();
         }

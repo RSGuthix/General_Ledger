@@ -38,30 +38,31 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(208, 187);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(124, 48);
             this.button1.TabIndex = 0;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // NewPassword
             // 
-            this.NewPassword.Font = new System.Drawing.Font("Franklin Gothic Book", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NewPassword.Location = new System.Drawing.Point(152, 85);
             this.NewPassword.Name = "NewPassword";
             this.NewPassword.PasswordChar = '*';
-            this.NewPassword.Size = new System.Drawing.Size(240, 25);
+            this.NewPassword.Size = new System.Drawing.Size(240, 24);
             this.NewPassword.TabIndex = 1;
             // 
             // ConfirmPassword
             // 
-            this.ConfirmPassword.Font = new System.Drawing.Font("Franklin Gothic Book", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConfirmPassword.Location = new System.Drawing.Point(152, 140);
             this.ConfirmPassword.Name = "ConfirmPassword";
             this.ConfirmPassword.PasswordChar = '*';
-            this.ConfirmPassword.Size = new System.Drawing.Size(240, 25);
+            this.ConfirmPassword.Size = new System.Drawing.Size(240, 24);
             this.ConfirmPassword.TabIndex = 2;
             // 
             // label1
@@ -79,20 +80,20 @@
             // labelNewPassword
             // 
             this.labelNewPassword.AutoSize = true;
-            this.labelNewPassword.Font = new System.Drawing.Font("Franklin Gothic Book", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNewPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNewPassword.Location = new System.Drawing.Point(44, 88);
             this.labelNewPassword.Name = "labelNewPassword";
-            this.labelNewPassword.Size = new System.Drawing.Size(102, 20);
+            this.labelNewPassword.Size = new System.Drawing.Size(109, 18);
             this.labelNewPassword.TabIndex = 4;
             this.labelNewPassword.Text = "New Password";
             // 
             // labelConfirmPassword
             // 
             this.labelConfirmPassword.AutoSize = true;
-            this.labelConfirmPassword.Font = new System.Drawing.Font("Franklin Gothic Book", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelConfirmPassword.Location = new System.Drawing.Point(22, 143);
             this.labelConfirmPassword.Name = "labelConfirmPassword";
-            this.labelConfirmPassword.Size = new System.Drawing.Size(124, 20);
+            this.labelConfirmPassword.Size = new System.Drawing.Size(132, 18);
             this.labelConfirmPassword.TabIndex = 5;
             this.labelConfirmPassword.Text = "Confirm Password";
             // 

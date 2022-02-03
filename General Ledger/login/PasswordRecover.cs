@@ -30,6 +30,8 @@ namespace General_Ledger
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
+            CreateNewPassword createNewPassword = new CreateNewPassword();
+            createNewPassword.Show();
 
         }
 

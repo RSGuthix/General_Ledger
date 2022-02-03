@@ -29,11 +29,20 @@ namespace General_Ledger
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            string message = "Email has Been sent";
+            string caption = "Email sent";
+            MessageBoxButtons buttons = MessageBoxButtons.OK;
+            DialogResult result;
+            result = MessageBox.Show(message, caption, buttons);
+            if (result == System.Windows.Forms.DialogResult.OK) 
+            {
+                this.Close();
+            }
         }
 
         private void Return_Click(object sender, EventArgs e)
         {
+            this.Hide();
             MainAdmin mainAdmin = new MainAdmin();
             mainAdmin.Show();
         }
