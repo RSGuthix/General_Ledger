@@ -32,5 +32,10 @@ namespace General_Ledger
             this.Hide();
 
         }
+
+        private void PasswordRecover_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
