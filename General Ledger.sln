@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "General Ledger", "General Ledger\General Ledger.csproj", "{593ED938-8549-4793-A59C-32EFCE920523}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{593ED938-8549-4793-A59C-32EFCE920523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{593ED938-8549-4793-A59C-32EFCE920523}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{593ED938-8549-4793-A59C-32EFCE920523}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{593ED938-8549-4793-A59C-32EFCE920523}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE2B852D-D8DD-4381-B9BA-1EE2D164D100}
+	EndGlobalSection
+EndGlobal
