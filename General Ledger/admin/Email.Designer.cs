@@ -38,45 +38,50 @@
             // 
             // EmailTextBox
             // 
-            this.EmailTextBox.Location = new System.Drawing.Point(290, 91);
+            this.EmailTextBox.Font = new System.Drawing.Font("Franklin Gothic Book", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmailTextBox.Location = new System.Drawing.Point(92, 92);
             this.EmailTextBox.Name = "EmailTextBox";
-            this.EmailTextBox.Size = new System.Drawing.Size(185, 20);
+            this.EmailTextBox.Size = new System.Drawing.Size(400, 25);
             this.EmailTextBox.TabIndex = 0;
             this.EmailTextBox.Text = "Email";
             // 
             // Message
             // 
-            this.Message.Location = new System.Drawing.Point(182, 202);
+            this.Message.Font = new System.Drawing.Font("Franklin Gothic Book", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Message.Location = new System.Drawing.Point(92, 200);
             this.Message.Multiline = true;
             this.Message.Name = "Message";
-            this.Message.Size = new System.Drawing.Size(419, 124);
+            this.Message.Size = new System.Drawing.Size(400, 124);
             this.Message.TabIndex = 1;
             this.Message.Text = "Message";
             this.Message.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // Subject
             // 
-            this.Subject.Location = new System.Drawing.Point(290, 149);
+            this.Subject.Font = new System.Drawing.Font("Franklin Gothic Book", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Subject.Location = new System.Drawing.Point(92, 150);
             this.Subject.Name = "Subject";
-            this.Subject.Size = new System.Drawing.Size(185, 20);
+            this.Subject.Size = new System.Drawing.Size(400, 25);
             this.Subject.TabIndex = 2;
             this.Subject.Text = "Subject";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(345, 43);
+            this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(227, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 13);
+            this.label1.Size = new System.Drawing.Size(130, 30);
             this.label1.TabIndex = 3;
             this.label1.Text = "Send Email";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Send
             // 
-            this.Send.Location = new System.Drawing.Point(265, 362);
+            this.Send.Font = new System.Drawing.Font("Franklin Gothic Book", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Send.Location = new System.Drawing.Point(175, 360);
             this.Send.Name = "Send";
-            this.Send.Size = new System.Drawing.Size(75, 23);
+            this.Send.Size = new System.Drawing.Size(75, 28);
             this.Send.TabIndex = 4;
             this.Send.Text = "Send";
             this.Send.UseVisualStyleBackColor = true;
@@ -84,9 +89,10 @@
             // 
             // Return
             // 
-            this.Return.Location = new System.Drawing.Point(444, 362);
+            this.Return.Font = new System.Drawing.Font("Franklin Gothic Book", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Return.Location = new System.Drawing.Point(354, 360);
             this.Return.Name = "Return";
-            this.Return.Size = new System.Drawing.Size(75, 23);
+            this.Return.Size = new System.Drawing.Size(75, 28);
             this.Return.TabIndex = 5;
             this.Return.Text = "Return";
             this.Return.UseVisualStyleBackColor = true;
@@ -96,7 +102,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(584, 421);
             this.Controls.Add(this.Return);
             this.Controls.Add(this.Send);
             this.Controls.Add(this.label1);
