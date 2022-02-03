@@ -1,4 +1,4 @@
-﻿namespace General_Ledger.login
+﻿namespace General_Ledger
 {
     partial class NewUser
     {
@@ -317,6 +317,7 @@
             this.boxPassword1.PasswordChar = '*';
             this.boxPassword1.Size = new System.Drawing.Size(300, 24);
             this.boxPassword1.TabIndex = 28;
+            this.boxPassword1.TextChanged += new System.EventHandler(this.boxPassword1_TextChanged);
             // 
             // boxPassword2
             // 
