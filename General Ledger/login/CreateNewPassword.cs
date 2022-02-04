@@ -22,15 +22,17 @@ namespace General_Ledger
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MainAdmin mainAdmin = new MainAdmin();
-            mainAdmin.Show();
-        }
 
         private void CreateNewPassword_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.Show();
         }
     }
 }
