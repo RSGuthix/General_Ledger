@@ -63,6 +63,7 @@ namespace General_Ledger
                 if (textBoxUsername.Text.Equals(dr["Username"].ToString()) && textBoxPassword.Text.Equals(dr["CurrentPassword"].ToString()))
                     MessageBox.Show("success!");
             conn.Close();
+            //hi
             MainAdmin mainAdmin = new MainAdmin();
             mainAdmin.Show();
         }
