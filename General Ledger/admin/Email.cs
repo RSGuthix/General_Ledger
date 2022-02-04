@@ -36,7 +36,7 @@ namespace General_Ledger
             result = MessageBox.Show(message, caption, buttons);
             if (result == System.Windows.Forms.DialogResult.OK) 
             {
-                this.Close();
+                //Emails people (not really)
             }
         }
 
@@ -45,6 +45,11 @@ namespace General_Ledger
             this.Hide();
             MainAdmin mainAdmin = new MainAdmin();
             mainAdmin.Show();
+        }
+
+        private void EmailTextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

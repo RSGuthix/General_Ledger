@@ -38,16 +38,17 @@
             // 
             // EmailTextBox
             // 
-            this.EmailTextBox.Font = new System.Drawing.Font("Franklin Gothic Book", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmailTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmailTextBox.Location = new System.Drawing.Point(92, 92);
             this.EmailTextBox.Name = "EmailTextBox";
-            this.EmailTextBox.Size = new System.Drawing.Size(400, 25);
+            this.EmailTextBox.Size = new System.Drawing.Size(400, 24);
             this.EmailTextBox.TabIndex = 0;
             this.EmailTextBox.Text = "Email";
+            this.EmailTextBox.TextChanged += new System.EventHandler(this.EmailTextBox_TextChanged);
             // 
             // Message
             // 
-            this.Message.Font = new System.Drawing.Font("Franklin Gothic Book", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Message.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Message.Location = new System.Drawing.Point(92, 200);
             this.Message.Multiline = true;
             this.Message.Name = "Message";
@@ -58,10 +59,10 @@
             // 
             // Subject
             // 
-            this.Subject.Font = new System.Drawing.Font("Franklin Gothic Book", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Subject.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Subject.Location = new System.Drawing.Point(92, 150);
             this.Subject.Name = "Subject";
-            this.Subject.Size = new System.Drawing.Size(400, 25);
+            this.Subject.Size = new System.Drawing.Size(400, 24);
             this.Subject.TabIndex = 2;
             this.Subject.Text = "Subject";
             // 
@@ -78,7 +79,7 @@
             // 
             // Send
             // 
-            this.Send.Font = new System.Drawing.Font("Franklin Gothic Book", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Send.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Send.Location = new System.Drawing.Point(175, 360);
             this.Send.Name = "Send";
             this.Send.Size = new System.Drawing.Size(75, 28);
@@ -89,7 +90,7 @@
             // 
             // Return
             // 
-            this.Return.Font = new System.Drawing.Font("Franklin Gothic Book", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Return.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Return.Location = new System.Drawing.Point(354, 360);
             this.Return.Name = "Return";
             this.Return.Size = new System.Drawing.Size(75, 28);

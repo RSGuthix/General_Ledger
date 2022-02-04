@@ -117,6 +117,7 @@
             this.birthdayPicker.Name = "birthdayPicker";
             this.birthdayPicker.Size = new System.Drawing.Size(255, 24);
             this.birthdayPicker.TabIndex = 5;
+            this.birthdayPicker.ValueChanged += new System.EventHandler(this.birthdayPicker_ValueChanged);
             // 
             // birthdayLabel
             // 

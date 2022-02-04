@@ -15,6 +15,7 @@ namespace General_Ledger
     {
         public SqlConnection conn = new SqlConnection();
         public SqlCommand cmd = new SqlCommand();
+        public static string curLogin = " ";
         public Login()
         {
             InitializeComponent();
@@ -60,12 +61,26 @@ namespace General_Ledger
             cmd.CommandText = "SELECT * FROM UserAccount";
             SqlDataReader dr = cmd.ExecuteReader();
             if (dr.Read())
+            {
                 if (textBoxUsername.Text.Equals(dr["Username"].ToString()) && textBoxPassword.Text.Equals(dr["CurrentPassword"].ToString()))
-                    MessageBox.Show("success!");
+                {
+                    MessageBox.Show("Login Successful", "Congrats", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (textBoxUsername.Text.Equals("admin"))
+                    {
+                        curLogin = "admin";
+                        this.Hide();
+                        MainAdmin mainAdmin = new MainAdmin();
+                        mainAdmin.Show();
+                    }
+                }
+                else 
+                {
+                    MessageBox.Show("Login Failed. Either your password or username is incorrect", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }     
             conn.Close();
-            //hi
-            MainAdmin mainAdmin = new MainAdmin();
-            mainAdmin.Show();
+            
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

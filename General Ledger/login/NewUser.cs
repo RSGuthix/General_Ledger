@@ -24,9 +24,12 @@ namespace General_Ledger
 
         private void buttonCreateUser_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            MainAdmin mainAdmin = new MainAdmin();
-            mainAdmin.Show();
+            if (Login.curLogin == "admin")
+            {
+                this.Hide();
+                MainAdmin mainAdmin = new MainAdmin();
+                mainAdmin.Show();
+            }
         }
 
         private void boxEmail_TextChanged(object sender, EventArgs e)
@@ -35,6 +38,11 @@ namespace General_Ledger
         }
 
         private void boxPassword1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void birthdayPicker_ValueChanged(object sender, EventArgs e)
         {
 
         }
