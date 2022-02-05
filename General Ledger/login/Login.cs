@@ -59,12 +59,17 @@ namespace General_Ledger
             cmd.Connection = conn;
             cmd.CommandText = "SELECT * FROM UserAccount";
             SqlDataReader dr = cmd.ExecuteReader();
-            if (dr.Read())
+            while (dr.Read())
+            {
+                Console.WriteLine(dr["Username"].ToString());
                 if (textBoxUsername.Text.Equals(dr["Username"].ToString()) && textBoxPassword.Text.Equals(dr["CurrentPassword"].ToString()))
                     MessageBox.Show("success!");
+            }
+
             conn.Close();
             MainAdmin mainAdmin = new MainAdmin();
             mainAdmin.Show();
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

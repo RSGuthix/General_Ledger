@@ -350,6 +350,7 @@
             this.radioAccountant.TabStop = true;
             this.radioAccountant.Text = "Accountant";
             this.radioAccountant.UseVisualStyleBackColor = true;
+            this.radioAccountant.CheckedChanged += new System.EventHandler(this.radioAccountant_CheckedChanged);
             // 
             // radioManager
             // 
@@ -362,6 +363,7 @@
             this.radioManager.TabStop = true;
             this.radioManager.Text = "Manager";
             this.radioManager.UseVisualStyleBackColor = true;
+            this.radioManager.CheckedChanged += new System.EventHandler(this.radioManager_CheckedChanged);
             // 
             // radioAdministrator
             // 
@@ -374,6 +376,7 @@
             this.radioAdministrator.TabStop = true;
             this.radioAdministrator.Text = "Administrator";
             this.radioAdministrator.UseVisualStyleBackColor = true;
+            this.radioAdministrator.CheckedChanged += new System.EventHandler(this.radioAdministrator_CheckedChanged);
             // 
             // buttonCreateUser
             // 
