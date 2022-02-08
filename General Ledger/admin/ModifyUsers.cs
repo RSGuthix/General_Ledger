@@ -23,7 +23,8 @@ namespace General_Ledger
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            DialogResult result;
+            result = MessageBox.Show("User information has been Updated", "Update Successful", MessageBoxButtons.OK);
         }
 
         private void button1_Click_1(object sender, EventArgs e)

@@ -101,9 +101,9 @@ namespace General_Ledger
                         login.Show();
                         conn.Open();
                         cmd = new SqlCommand("Insert into UserAccount Values('" + username + "','" + password + "','" + accountType + "','" + fName + "','" + lName + "','" + email + "','" + address + "','" + city + "','" + state + "','" + zip + "','" + birthday + "','2022-01-01','Blue')", conn);
-                        cmd2 = new SqlCommand("Insert into UserPasswords Values ('" + password + "','" + dateString + "','" + username + "')",conn);
+                        //cmd2 = new SqlCommand("Insert into UserPasswords Values ('" + password + "','" + dateString + "','" + username + "')",conn);
                         cmd.ExecuteNonQuery();
-                        cmd2.ExecuteNonQuery();
+                        //cmd2.ExecuteNonQuery();
                         conn.Close();
                     }
                     else

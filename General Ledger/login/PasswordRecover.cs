@@ -15,6 +15,7 @@ namespace General_Ledger
     {
         public SqlConnection conn = new SqlConnection(@"Data Source=sweappdomain.database.windows.net;Initial Catalog=GeneralLedger;Persist Security Info=True;User ID=Michael;Password=Rutherfoord!");
         public SqlCommand cmd = new SqlCommand();
+        public static string tempUserName;
         public PasswordRecover()
         {
             InitializeComponent();
@@ -33,6 +34,7 @@ namespace General_Ledger
         private void button1_Click(object sender, EventArgs e)
         {
             try {
+                tempUserName = textBoxUsername.Text;
                 bool boolean = true;
                 conn.Open();
                 cmd.Connection = conn;
