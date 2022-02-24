@@ -66,10 +66,5 @@ namespace General_Ledger
             MainAdmin mainAdmin = new MainAdmin();
             mainAdmin.Show();
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
