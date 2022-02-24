@@ -33,10 +33,5 @@ namespace General_Ledger
         {
 
         }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

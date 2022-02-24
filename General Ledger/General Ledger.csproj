@@ -183,29 +183,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="admin\EventLog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="admin\EventLog.Designer.cs">
-      <DependentUpon>EventLog.cs</DependentUpon>
-    </Compile>
-    <Compile Include="charts\ChartInput.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="charts\ChartInput.Designer.cs">
-      <DependentUpon>ChartInput.cs</DependentUpon>
-    </Compile>
-    <Compile Include="charts\ChartView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="charts\ChartView.Designer.cs">
-      <DependentUpon>ChartView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GeneralLedgerDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GeneralLedgerDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="login\CreateNewPassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -256,15 +233,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="admin\EventLog.resx">
-      <DependentUpon>EventLog.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="charts\ChartInput.resx">
-      <DependentUpon>ChartInput.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="charts\ChartView.resx">
-      <DependentUpon>ChartView.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="login\CreateNewPassword.resx">
       <DependentUpon>CreateNewPassword.cs</DependentUpon>
     </EmbeddedResource>
@@ -298,17 +266,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="GeneralLedgerDataSet.xsc">
-      <DependentUpon>GeneralLedgerDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="GeneralLedgerDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>GeneralLedgerDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="GeneralLedgerDataSet.xss">
-      <DependentUpon>GeneralLedgerDataSet.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -334,9 +291,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.4.0.0\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.4.0.0\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />
