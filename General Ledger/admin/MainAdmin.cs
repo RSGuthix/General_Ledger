@@ -29,10 +29,23 @@ namespace General_Ledger
             modifyUsers.Show();
         }
 
-        private void ExpiredPasswords_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            ExpiredPasswords expiredPasswords = new ExpiredPasswords();
-            expiredPasswords.Show();
+
+            NewUser user = new NewUser();
+            user.Show();
+        }
+
+        private void SignOutButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

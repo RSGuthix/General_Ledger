@@ -55,16 +55,47 @@ namespace General_Ledger
 
         private void button1_Click(object sender, EventArgs e)
         {
-            conn.Open();
-            cmd.Connection = conn;
-            cmd.CommandText = "SELECT * FROM UserAccount";
-            SqlDataReader dr = cmd.ExecuteReader();
-            if (dr.Read())
-                if (textBoxUsername.Text.Equals(dr["Username"].ToString()) && textBoxPassword.Text.Equals(dr["CurrentPassword"].ToString()))
-                    MessageBox.Show("success!");
-            conn.Close();
-            MainAdmin mainAdmin = new MainAdmin();
-            mainAdmin.Show();
+            try
+            {
+                Boolean login = false;
+                conn.Open();
+                cmd.Connection = conn;
+                cmd.CommandText = "SELECT * FROM UserAccount";
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    Console.WriteLine(dr["Username"].ToString());
+                    if (textBoxUsername.Text.Equals(dr["Username"].ToString()) && textBoxPassword.Text.Equals(dr["CurrentPassword"].ToString()))
+                    {
+                        //MessageBox.Show("success!");
+                        if (dr["AccountType"].ToString().Equals("Administrator"))
+                        {
+                            this.Hide();
+                            MainAdmin mainAdmin = new MainAdmin();
+                            mainAdmin.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Other types not implemented", "No other types besides admin implemented", MessageBoxButtons.OK);
+                           
+                        }
+                        login = true;
+                    }
+             
+
+                }
+
+                if (login == false) {
+                    MessageBox.Show("Incorrect Login","User name or Password is incorrect",MessageBoxButtons.OK);
+                }
+
+                conn.Close();
+            }
+            catch (Exception ex) {
+                MessageBox.Show(ex.Message);
+            }
+           
+
         }
     }
 }

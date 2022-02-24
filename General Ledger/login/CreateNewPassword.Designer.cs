@@ -34,6 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.labelNewPassword = new System.Windows.Forms.Label();
             this.labelConfirmPassword = new System.Windows.Forms.Label();
+            this.DebugLeaveButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -50,7 +51,7 @@
             // NewPassword
             // 
             this.NewPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NewPassword.Location = new System.Drawing.Point(152, 85);
+            this.NewPassword.Location = new System.Drawing.Point(152, 96);
             this.NewPassword.Name = "NewPassword";
             this.NewPassword.PasswordChar = '*';
             this.NewPassword.Size = new System.Drawing.Size(240, 24);
@@ -59,7 +60,7 @@
             // ConfirmPassword
             // 
             this.ConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConfirmPassword.Location = new System.Drawing.Point(152, 140);
+            this.ConfirmPassword.Location = new System.Drawing.Point(152, 138);
             this.ConfirmPassword.Name = "ConfirmPassword";
             this.ConfirmPassword.PasswordChar = '*';
             this.ConfirmPassword.Size = new System.Drawing.Size(240, 24);
@@ -81,7 +82,7 @@
             // 
             this.labelNewPassword.AutoSize = true;
             this.labelNewPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNewPassword.Location = new System.Drawing.Point(44, 88);
+            this.labelNewPassword.Location = new System.Drawing.Point(37, 99);
             this.labelNewPassword.Name = "labelNewPassword";
             this.labelNewPassword.Size = new System.Drawing.Size(109, 18);
             this.labelNewPassword.TabIndex = 4;
@@ -91,17 +92,28 @@
             // 
             this.labelConfirmPassword.AutoSize = true;
             this.labelConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelConfirmPassword.Location = new System.Drawing.Point(22, 143);
+            this.labelConfirmPassword.Location = new System.Drawing.Point(14, 141);
             this.labelConfirmPassword.Name = "labelConfirmPassword";
             this.labelConfirmPassword.Size = new System.Drawing.Size(132, 18);
             this.labelConfirmPassword.TabIndex = 5;
             this.labelConfirmPassword.Text = "Confirm Password";
+            // 
+            // DebugLeaveButton
+            // 
+            this.DebugLeaveButton.Location = new System.Drawing.Point(12, 12);
+            this.DebugLeaveButton.Name = "DebugLeaveButton";
+            this.DebugLeaveButton.Size = new System.Drawing.Size(81, 26);
+            this.DebugLeaveButton.TabIndex = 6;
+            this.DebugLeaveButton.Text = "Degub Leave";
+            this.DebugLeaveButton.UseVisualStyleBackColor = true;
+            this.DebugLeaveButton.Click += new System.EventHandler(this.DebugLeaveButton_Click);
             // 
             // CreateNewPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 261);
+            this.Controls.Add(this.DebugLeaveButton);
             this.Controls.Add(this.labelConfirmPassword);
             this.Controls.Add(this.labelNewPassword);
             this.Controls.Add(this.label1);
@@ -124,6 +136,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelNewPassword;
         private System.Windows.Forms.Label labelConfirmPassword;
+        private System.Windows.Forms.Button DebugLeaveButton;
     }
 }
 

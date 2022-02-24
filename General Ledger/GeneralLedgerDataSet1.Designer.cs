@@ -20,23 +20,21 @@ namespace General_Ledger {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("GeneralLedgerDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("GeneralLedgerDataSet1")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class GeneralLedgerDataSet : global::System.Data.DataSet {
+    public partial class GeneralLedgerDataSet1 : global::System.Data.DataSet {
         
         private UserAccountDataTable tableUserAccount;
         
-
         private UserPasswordsDataTable tableUserPasswords;
         
         private global::System.Data.DataRelation relationFK__UserPassw__UserN__619B8048;
         
-
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public GeneralLedgerDataSet() {
+        public GeneralLedgerDataSet1() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -47,7 +45,7 @@ namespace General_Ledger {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected GeneralLedgerDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected GeneralLedgerDataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -63,11 +61,9 @@ namespace General_Ledger {
                 if ((ds.Tables["UserAccount"] != null)) {
                     base.Tables.Add(new UserAccountDataTable(ds.Tables["UserAccount"]));
                 }
-
                 if ((ds.Tables["UserPasswords"] != null)) {
                     base.Tables.Add(new UserPasswordsDataTable(ds.Tables["UserPasswords"]));
                 }
-
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -98,7 +94,6 @@ namespace General_Ledger {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
         public UserPasswordsDataTable UserPasswords {
@@ -109,7 +104,6 @@ namespace General_Ledger {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -150,7 +144,7 @@ namespace General_Ledger {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            GeneralLedgerDataSet cln = ((GeneralLedgerDataSet)(base.Clone()));
+            GeneralLedgerDataSet1 cln = ((GeneralLedgerDataSet1)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -178,11 +172,9 @@ namespace General_Ledger {
                 if ((ds.Tables["UserAccount"] != null)) {
                     base.Tables.Add(new UserAccountDataTable(ds.Tables["UserAccount"]));
                 }
-
                 if ((ds.Tables["UserPasswords"] != null)) {
                     base.Tables.Add(new UserPasswordsDataTable(ds.Tables["UserPasswords"]));
                 }
-
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -222,7 +214,6 @@ namespace General_Ledger {
                     this.tableUserAccount.InitVars();
                 }
             }
-
             this.tableUserPasswords = ((UserPasswordsDataTable)(base.Tables["UserPasswords"]));
             if ((initTable == true)) {
                 if ((this.tableUserPasswords != null)) {
@@ -230,27 +221,24 @@ namespace General_Ledger {
                 }
             }
             this.relationFK__UserPassw__UserN__619B8048 = this.Relations["FK__UserPassw__UserN__619B8048"];
-
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "GeneralLedgerDataSet";
+            this.DataSetName = "GeneralLedgerDataSet1";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/GeneralLedgerDataSet.xsd";
+            this.Namespace = "http://tempuri.org/GeneralLedgerDataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableUserAccount = new UserAccountDataTable();
             base.Tables.Add(this.tableUserAccount);
-
             this.tableUserPasswords = new UserPasswordsDataTable();
             base.Tables.Add(this.tableUserPasswords);
             this.relationFK__UserPassw__UserN__619B8048 = new global::System.Data.DataRelation("FK__UserPassw__UserN__619B8048", new global::System.Data.DataColumn[] {
                         this.tableUserAccount.UsernameColumn}, new global::System.Data.DataColumn[] {
                         this.tableUserPasswords.UserNameColumn}, false);
             this.Relations.Add(this.relationFK__UserPassw__UserN__619B8048);
-
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -261,14 +249,12 @@ namespace General_Ledger {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-
         private bool ShouldSerializeUserPasswords() {
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-
         private void SchemaChanged(object sender, global::System.ComponentModel.CollectionChangeEventArgs e) {
             if ((e.Action == global::System.ComponentModel.CollectionChangeAction.Remove)) {
                 this.InitVars();
@@ -278,7 +264,7 @@ namespace General_Ledger {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            GeneralLedgerDataSet ds = new GeneralLedgerDataSet();
+            GeneralLedgerDataSet1 ds = new GeneralLedgerDataSet1();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -325,11 +311,9 @@ namespace General_Ledger {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public delegate void UserAccountRowChangeEventHandler(object sender, UserAccountRowChangeEvent e);
         
-
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public delegate void UserPasswordsRowChangeEventHandler(object sender, UserPasswordsRowChangeEvent e);
         
-
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
@@ -712,7 +696,7 @@ namespace General_Ledger {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                GeneralLedgerDataSet ds = new GeneralLedgerDataSet();
+                GeneralLedgerDataSet1 ds = new GeneralLedgerDataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -772,7 +756,6 @@ namespace General_Ledger {
         }
         
         /// <summary>
-
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
@@ -1006,7 +989,7 @@ namespace General_Ledger {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                GeneralLedgerDataSet ds = new GeneralLedgerDataSet();
+                GeneralLedgerDataSet1 ds = new GeneralLedgerDataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1066,7 +1049,6 @@ namespace General_Ledger {
         }
         
         /// <summary>
-
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class UserAccountRow : global::System.Data.DataRow {
@@ -1341,7 +1323,6 @@ namespace General_Ledger {
             public void SetSecurityQuestionAnswerNull() {
                 this[this.tableUserAccount.SecurityQuestionAnswerColumn] = global::System.Convert.DBNull;
             }
-
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -1429,7 +1410,6 @@ namespace General_Ledger {
             public void SetUserNameNull() {
                 this[this.tableUserPasswords.UserNameColumn] = global::System.Convert.DBNull;
             }
-
         }
         
         /// <summary>
@@ -1465,7 +1445,6 @@ namespace General_Ledger {
                 }
             }
         }
-
         
         /// <summary>
         ///Row event argument class
@@ -1500,10 +1479,9 @@ namespace General_Ledger {
                 }
             }
         }
-
     }
 }
-namespace General_Ledger.GeneralLedgerDataSetTableAdapters {
+namespace General_Ledger.GeneralLedgerDataSet1TableAdapters {
     
     
     /// <summary>
@@ -1746,7 +1724,7 @@ SELECT Username, CurrentPassword, AccountType, Fname, Lname, Email, Addr, City, 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(GeneralLedgerDataSet.UserAccountDataTable dataTable) {
+        public virtual int Fill(GeneralLedgerDataSet1.UserAccountDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1759,9 +1737,9 @@ SELECT Username, CurrentPassword, AccountType, Fname, Lname, Email, Addr, City, 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual GeneralLedgerDataSet.UserAccountDataTable GetData() {
+        public virtual GeneralLedgerDataSet1.UserAccountDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            GeneralLedgerDataSet.UserAccountDataTable dataTable = new GeneralLedgerDataSet.UserAccountDataTable();
+            GeneralLedgerDataSet1.UserAccountDataTable dataTable = new GeneralLedgerDataSet1.UserAccountDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1769,14 +1747,14 @@ SELECT Username, CurrentPassword, AccountType, Fname, Lname, Email, Addr, City, 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(GeneralLedgerDataSet.UserAccountDataTable dataTable) {
+        public virtual int Update(GeneralLedgerDataSet1.UserAccountDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(GeneralLedgerDataSet dataSet) {
+        public virtual int Update(GeneralLedgerDataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "UserAccount");
         }
         
@@ -2259,7 +2237,6 @@ SELECT Username, CurrentPassword, AccountType, Fname, Lname, Email, Addr, City, 
     }
     
     /// <summary>
-
     ///Represents the connection and commands used to retrieve and save data.
     ///</summary>
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2438,7 +2415,7 @@ SELECT Passwords, PasswordCreationDate, UserName FROM UserPasswords WHERE (Passw
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(GeneralLedgerDataSet.UserPasswordsDataTable dataTable) {
+        public virtual int Fill(GeneralLedgerDataSet1.UserPasswordsDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -2451,9 +2428,9 @@ SELECT Passwords, PasswordCreationDate, UserName FROM UserPasswords WHERE (Passw
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual GeneralLedgerDataSet.UserPasswordsDataTable GetData() {
+        public virtual GeneralLedgerDataSet1.UserPasswordsDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            GeneralLedgerDataSet.UserPasswordsDataTable dataTable = new GeneralLedgerDataSet.UserPasswordsDataTable();
+            GeneralLedgerDataSet1.UserPasswordsDataTable dataTable = new GeneralLedgerDataSet1.UserPasswordsDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -2461,14 +2438,14 @@ SELECT Passwords, PasswordCreationDate, UserName FROM UserPasswords WHERE (Passw
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(GeneralLedgerDataSet.UserPasswordsDataTable dataTable) {
+        public virtual int Update(GeneralLedgerDataSet1.UserPasswordsDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(GeneralLedgerDataSet dataSet) {
+        public virtual int Update(GeneralLedgerDataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "UserPasswords");
         }
         
@@ -2636,7 +2613,6 @@ SELECT Passwords, PasswordCreationDate, UserName FROM UserPasswords WHERE (Passw
     }
     
     /// <summary>
-
     ///TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
     ///</summary>
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2650,10 +2626,8 @@ SELECT Passwords, PasswordCreationDate, UserName FROM UserPasswords WHERE (Passw
         
         private UserAccountTableAdapter _userAccountTableAdapter;
         
-
         private UserPasswordsTableAdapter _userPasswordsTableAdapter;
         
-
         private bool _backupDataSetBeforeUpdate;
         
         private global::System.Data.IDbConnection _connection;
@@ -2685,7 +2659,6 @@ SELECT Passwords, PasswordCreationDate, UserName FROM UserPasswords WHERE (Passw
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
@@ -2700,7 +2673,6 @@ SELECT Passwords, PasswordCreationDate, UserName FROM UserPasswords WHERE (Passw
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-
         public bool BackupDataSetBeforeUpdate {
             get {
                 return this._backupDataSetBeforeUpdate;
@@ -2722,12 +2694,10 @@ SELECT Passwords, PasswordCreationDate, UserName FROM UserPasswords WHERE (Passw
                             && (this._userAccountTableAdapter.Connection != null))) {
                     return this._userAccountTableAdapter.Connection;
                 }
-
                 if (((this._userPasswordsTableAdapter != null) 
                             && (this._userPasswordsTableAdapter.Connection != null))) {
                     return this._userPasswordsTableAdapter.Connection;
                 }
-
                 return null;
             }
             set {
@@ -2744,11 +2714,9 @@ SELECT Passwords, PasswordCreationDate, UserName FROM UserPasswords WHERE (Passw
                 if ((this._userAccountTableAdapter != null)) {
                     count = (count + 1);
                 }
-
                 if ((this._userPasswordsTableAdapter != null)) {
                     count = (count + 1);
                 }
-
                 return count;
             }
         }
@@ -2758,7 +2726,7 @@ SELECT Passwords, PasswordCreationDate, UserName FROM UserPasswords WHERE (Passw
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(GeneralLedgerDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(GeneralLedgerDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._userAccountTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.UserAccount.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -2769,7 +2737,6 @@ SELECT Passwords, PasswordCreationDate, UserName FROM UserPasswords WHERE (Passw
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-
             if ((this._userPasswordsTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.UserPasswords.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
@@ -2779,7 +2746,6 @@ SELECT Passwords, PasswordCreationDate, UserName FROM UserPasswords WHERE (Passw
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-
             return result;
         }
         
@@ -2788,7 +2754,7 @@ SELECT Passwords, PasswordCreationDate, UserName FROM UserPasswords WHERE (Passw
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(GeneralLedgerDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(GeneralLedgerDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._userAccountTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.UserAccount.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -2798,7 +2764,6 @@ SELECT Passwords, PasswordCreationDate, UserName FROM UserPasswords WHERE (Passw
                     allAddedRows.AddRange(addedRows);
                 }
             }
-
             if ((this._userPasswordsTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.UserPasswords.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
@@ -2807,7 +2772,6 @@ SELECT Passwords, PasswordCreationDate, UserName FROM UserPasswords WHERE (Passw
                     allAddedRows.AddRange(addedRows);
                 }
             }
-
             return result;
         }
         
@@ -2816,9 +2780,8 @@ SELECT Passwords, PasswordCreationDate, UserName FROM UserPasswords WHERE (Passw
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(GeneralLedgerDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(GeneralLedgerDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-
             if ((this._userPasswordsTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.UserPasswords.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -2827,7 +2790,6 @@ SELECT Passwords, PasswordCreationDate, UserName FROM UserPasswords WHERE (Passw
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-
             if ((this._userAccountTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.UserAccount.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -2868,7 +2830,7 @@ SELECT Passwords, PasswordCreationDate, UserName FROM UserPasswords WHERE (Passw
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(GeneralLedgerDataSet dataSet) {
+        public virtual int UpdateAll(GeneralLedgerDataSet1 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
@@ -2880,13 +2842,11 @@ SELECT Passwords, PasswordCreationDate, UserName FROM UserPasswords WHERE (Passw
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
-
             if (((this._userPasswordsTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._userPasswordsTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
-
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
                 throw new global::System.ApplicationException("TableAdapterManager contains no connection information. Set each TableAdapterMana" +
@@ -2928,7 +2888,6 @@ SELECT Passwords, PasswordCreationDate, UserName FROM UserPasswords WHERE (Passw
                         adaptersWithAcceptChangesDuringUpdate.Add(this._userAccountTableAdapter.Adapter);
                     }
                 }
-
                 if ((this._userPasswordsTableAdapter != null)) {
                     revertConnections.Add(this._userPasswordsTableAdapter, this._userPasswordsTableAdapter.Connection);
                     this._userPasswordsTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
@@ -2938,7 +2897,6 @@ SELECT Passwords, PasswordCreationDate, UserName FROM UserPasswords WHERE (Passw
                         adaptersWithAcceptChangesDuringUpdate.Add(this._userPasswordsTableAdapter.Adapter);
                     }
                 }
-
                 // 
                 //---- Perform updates -----------
                 //
@@ -3001,12 +2959,10 @@ SELECT Passwords, PasswordCreationDate, UserName FROM UserPasswords WHERE (Passw
                     this._userAccountTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._userAccountTableAdapter]));
                     this._userAccountTableAdapter.Transaction = null;
                 }
-
                 if ((this._userPasswordsTableAdapter != null)) {
                     this._userPasswordsTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._userPasswordsTableAdapter]));
                     this._userPasswordsTableAdapter.Transaction = null;
                 }
-
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];
                     adaptersWithAcceptChangesDuringUpdate.CopyTo(adapters);

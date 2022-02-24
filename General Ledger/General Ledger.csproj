@@ -183,28 +183,27 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="admin\EventLog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="admin\EventLog.Designer.cs">
-      <DependentUpon>EventLog.cs</DependentUpon>
-    </Compile>
-    <Compile Include="charts\ChartInput.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="charts\ChartInput.Designer.cs">
-      <DependentUpon>ChartInput.cs</DependentUpon>
-    </Compile>
-    <Compile Include="charts\ChartView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="charts\ChartView.Designer.cs">
-      <DependentUpon>ChartView.cs</DependentUpon>
+
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="GeneralLedgerDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>GeneralLedgerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralLedgerDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GeneralLedgerDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralLedgerDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GeneralLedgerDataSet2.xsd</DependentUpon>
+
     </Compile>
     <Compile Include="login\CreateNewPassword.cs">
       <SubType>Form</SubType>
@@ -217,12 +216,6 @@
     </Compile>
     <Compile Include="admin\Email.Designer.cs">
       <DependentUpon>Email.cs</DependentUpon>
-    </Compile>
-    <Compile Include="admin\ExpiredPasswords.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="admin\ExpiredPasswords.Designer.cs">
-      <DependentUpon>ExpiredPasswords.cs</DependentUpon>
     </Compile>
     <Compile Include="admin\MainAdmin.cs">
       <SubType>Form</SubType>
@@ -271,9 +264,6 @@
     <EmbeddedResource Include="admin\Email.resx">
       <DependentUpon>Email.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="admin\ExpiredPasswords.resx">
-      <DependentUpon>ExpiredPasswords.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="admin\MainAdmin.resx">
       <DependentUpon>MainAdmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -298,6 +288,19 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+
     <None Include="GeneralLedgerDataSet.xsc">
       <DependentUpon>GeneralLedgerDataSet.xsd</DependentUpon>
     </None>
@@ -309,6 +312,30 @@
     <None Include="GeneralLedgerDataSet.xss">
       <DependentUpon>GeneralLedgerDataSet.xsd</DependentUpon>
     </None>
+
+    <None Include="GeneralLedgerDataSet1.xsc">
+      <DependentUpon>GeneralLedgerDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="GeneralLedgerDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GeneralLedgerDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GeneralLedgerDataSet1.xss">
+      <DependentUpon>GeneralLedgerDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="GeneralLedgerDataSet2.xsc">
+      <DependentUpon>GeneralLedgerDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="GeneralLedgerDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GeneralLedgerDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GeneralLedgerDataSet2.xss">
+      <DependentUpon>GeneralLedgerDataSet2.xsd</DependentUpon>
+    </None>
+
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
