@@ -39,6 +39,7 @@ namespace General_Ledger
 
         }
 
+
         private void ModifyUsers_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = GetUser();
@@ -64,6 +65,7 @@ namespace General_Ledger
         {
             // TODO: This line of code loads data into the 'generalLedgerDataSet.UserAccount' table. You can move, or remove it, as needed.
             this.userAccountTableAdapter.Fill(this.generalLedgerDataSet.UserAccount);
+
 
         }
     }

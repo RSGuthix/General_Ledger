@@ -83,7 +83,9 @@
     <Reference Include="Microsoft.IdentityModel.Tokens, Version=6.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.IdentityModel.Tokens.6.8.0\lib\net461\Microsoft.IdentityModel.Tokens.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
@@ -181,6 +183,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -200,6 +203,7 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>GeneralLedgerDataSet2.xsd</DependentUpon>
+
     </Compile>
     <Compile Include="login\CreateNewPassword.cs">
       <SubType>Form</SubType>
@@ -245,6 +249,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="admin\EventLog.resx">
+      <DependentUpon>EventLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="charts\ChartInput.resx">
+      <DependentUpon>ChartInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="charts\ChartView.resx">
+      <DependentUpon>ChartView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login\CreateNewPassword.resx">
       <DependentUpon>CreateNewPassword.cs</DependentUpon>
     </EmbeddedResource>
@@ -275,6 +288,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
@@ -286,6 +300,7 @@
     <None Include="DataSet1.xss">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
+
     <None Include="GeneralLedgerDataSet.xsc">
       <DependentUpon>GeneralLedgerDataSet.xsd</DependentUpon>
     </None>
@@ -297,6 +312,7 @@
     <None Include="GeneralLedgerDataSet.xss">
       <DependentUpon>GeneralLedgerDataSet.xsd</DependentUpon>
     </None>
+
     <None Include="GeneralLedgerDataSet1.xsc">
       <DependentUpon>GeneralLedgerDataSet1.xsd</DependentUpon>
     </None>
@@ -319,6 +335,7 @@
     <None Include="GeneralLedgerDataSet2.xss">
       <DependentUpon>GeneralLedgerDataSet2.xsd</DependentUpon>
     </None>
+
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -344,6 +361,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.4.0.0\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.4.0.0\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />

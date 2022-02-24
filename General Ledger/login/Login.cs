@@ -97,10 +97,5 @@ namespace General_Ledger
            
 
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
